@@ -1,0 +1,12 @@
+1. Login to your gmail account
+2. Go to google translate home page (https://translate.google.com)
+3. Click on translate website option below
+4. Fill in the required details
+5. Copy and paste the code in the web pages you want to be translated
+
+NOTE: You need to choose website default language also in the options of translate. This will help you to translate to the default
+language after you tranlate. Example below for this condition.
+
+Example: My website originally written for English readers. I wanted to tranlate it to Kannada and Hindi so I chose only Kannada and Hindi 
+in the translate language options. I was able to convert it to Hindi/Kannada but I wasn't able to revert back to English, this
+situation told me to choose English also in the translate language options.
