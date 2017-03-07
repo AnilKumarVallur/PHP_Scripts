@@ -8,6 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src='js/vendor/jquery.js'></script>
+	<script src='js/jquery.tablesorter.min.js'></script>
 	<link rel='stylesheet' href='css/app.css'>
 	<link rel='stylesheet' href='css/foundation.css'>
 	<link rel='stylesheet' href='css/foundation.min.css'>
@@ -57,6 +58,7 @@
 	</style>
 	<script>
 	$(document).ready(function(){
+		$('#keywords').tablesorter();
 		$("a#op").click(function(){
 			op = $(this).text();
 			if(op == 'Edit'){
@@ -146,13 +148,16 @@
 	<li><a href="add.php">Add Employee</a></li>
   </ul> -->
   <div id='datatable' class="table-responsive">
-	<table class="table table-striped table-hover">
-		<tr>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Action</th>
-		</tr>
-		<?php
+	<table id="keywords" class="table table-striped table-hover" cellspacing="0" cellpadding="0">
+	<thead>
+      <tr>
+		<th><span>First Name</span></th>
+		<th><span>Last Name</span></th>
+		<th><span>Action</span></th>
+	  </tr>
+    </thead>
+    <tbody>
+      <?php
 			$sql = mysqli_query($conn, "SELECT * FROM employee");
 			if(mysqli_num_rows($sql) == 0){
 				echo '<tr><td colspan="8">No data available.</td></tr>';
@@ -170,6 +175,7 @@
 				}
 			}
 		?>
+    </tbody>
 	<tfoot>
 		<tr>
 			<td id='add-emp' colspan='3'> <a>Add employee</a> </td>
