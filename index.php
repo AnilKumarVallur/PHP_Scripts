@@ -141,10 +141,10 @@
 	</script>
 </head>
 <body>
-  <ul>
+  <!-- <ul>
 	<li><a href="index.php">Employee Data</a></li>
 	<li><a href="add.php">Add Employee</a></li>
-  </ul>
+  </ul> -->
   <div id='datatable' class="table-responsive">
 	<table class="table table-striped table-hover">
 		<tr>
