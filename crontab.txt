@@ -1,0 +1,1 @@
+*/5 * * * * /usr/bin/php /var/www/html/read-email/read-mail.php >/var/www/html/read-email/logs/rank.log 2>&1
