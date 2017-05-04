@@ -1,3 +1,0 @@
-reading emails from gmail
-1. php_imap.dll should be uncommented in php.ini
-2. Login to gmail and give access to the apps. Here is the link https://www.google.com/settings/security/lesssecureapps
