@@ -16,3 +16,8 @@ Other Implementation is by using any framework like code Ignitor, Drupal, Magent
 Efficiency
 1. I have completed in the procedural way in 4 hours
 2. Implementation in Drupal 8 would take me 1.5 hours including the environment set up, configuration and solution implementation
+
+Usage
+1. Create a database 'employee_db_test' using phpmyadmin of myldump or any other way
+2. Import the SQL file present in this folder
+3. Open index.php in your favourite browser and it starts working
